@@ -35,10 +35,10 @@ class Circle(Shape):
 
 class Trinagle(Shape):
     def __init__(self,s1,s2,s3,c):
-        Shape.__init__()
+        Shape.__init__(self)
         self.side1 = s1
         self.side2 = s2
-        self,side3 = s3
+        self.side3 = s3
         self.color = c
 
 def printArea(s):
@@ -47,10 +47,12 @@ def printArea(s):
 sq1 = Square(5,"Green")
 sq2 = Square(9, "Black")
 c1 = Circle(10,"Orange")
+t1 = Trinagle(3,4,5,"Red")
 
 
 print("Circle", c1.radius,c1.color)
 print(sq1.calArea())
 print(c1.calArea())
+print(printArea(t1))
 
 
