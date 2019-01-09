@@ -1,1 +1,1 @@
-# ai_trining
+# python training
